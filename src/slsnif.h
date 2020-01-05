@@ -24,7 +24,7 @@
 #include <fcntl.h>
 #include <errno.h>
 #include <signal.h>
-#include <wait.h>
+//#include <wait.h>
 #include <sys/stat.h>
 #include <sys/types.h>
 #ifdef HAVE_GETOPT_H

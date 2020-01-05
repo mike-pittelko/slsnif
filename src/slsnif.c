@@ -54,7 +54,7 @@ void usage() {
     printf("  --timecolor  <color>    - color to use for timestamp.\n");
     printf("  --bytescolor <color>    - color to use for number of bytes transmitted.\n\n");
     printf("Following names are valid colors:\n");
-    printf(" \tblack, red, green, yellow, blue, magenta, cyan, white,\n");
+    printf("\tblack, red, green, yellow, blue, magenta, cyan, white,\n");
     printf("\tbrightblack,brightred, brightgreen, brightyellow,\n");
     printf("\tbrightblue, brightmagenta, brightcyan, brightwhite\n\n");
     printf("Example: slsnif -l log.txt -s 2400 /dev/ttyS1\n\n");
@@ -378,7 +378,7 @@ void pipeReader() {
 void closeAll() {
     int i;
     FILE *fp;
-    
+
     /* close all opened file descriptors */
     /* unlock the port(s) if necessary */
     if (!tty_data.nolock) {
@@ -751,7 +751,7 @@ int main(int argc, char *argv[]) {
             write(tmpfd, "\n", 1);
             printf("Saved name of the pty opened into file '%s'.\n", TMPPATH);
             if (close(tmpfd) < 0) perror(CLOSEFAIL);
-        }        
+        }
         if (!tty_data.sysvpty) free(tty_data.ptyName);
         /* set pointer to NULL as it will be checked in closeAll() */
         tty_data.ptyName = NULL;
