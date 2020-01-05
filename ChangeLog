@@ -95,3 +95,8 @@
             -  Added ability to use SYSV (Unix98) ptys instead of BSD ones
                (see '-u' and '--unix98' parameters). This option can also be
                turned on/off from rc-file.
+1/5/2020
+        * 0.4.4a:
+            -  Repaired a corrupted string with an invalid character. Apparently
+               corrupted at some point at SourceForge.
+
